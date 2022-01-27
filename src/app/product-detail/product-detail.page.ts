@@ -10,7 +10,8 @@ import SwiperCore, {
   Zoom,
   Autoplay,
   Thumbs,
-  Controller
+  Controller,
+
 } from "swiper";
 import { BehaviorSubject } from "rxjs";
 
@@ -24,7 +25,7 @@ SwiperCore.use([
   Zoom,
   Autoplay,
   Thumbs,
-  Controller
+  Controller,
 ]);
 
 @Component({
