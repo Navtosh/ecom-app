@@ -1,0 +1,465 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+@import "~swiper/css/bundle";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+
+
+
+@font-face {
+    font-family: 'poppinsblack';
+    src: url('./assets/fonts/poppins-black-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsblack_italic';
+    src: url('./assets/fonts/poppins-blackitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('./assets/fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold_italic';
+    src: url('./assets/fonts/poppins-bolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsextrabold';
+    src: url('./assets/fonts/poppins-extrabold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsextrabold_italic';
+    src: url('./assets/fonts/poppins-extrabolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsextralight';
+    src: url('./assets/fonts/poppins-extralight-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsextralight_italic';
+    src: url('./assets/fonts/poppins-extralightitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsitalic';
+    src: url('./assets/fonts/poppins-italic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('./assets/fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinslight_italic';
+    src: url('./assets/fonts/poppins-lightitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('./assets/fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsmedium_italic';
+    src: url('./assets/fonts/poppins-mediumitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('./assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('./assets/fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinssemibold_italic';
+    src: url('./assets/fonts/poppins-semibolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsthin';
+    src: url('./assets/fonts/poppins-thin-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinsthin_italic';
+    src: url('./assets/fonts/poppins-thinitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/poppins-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('./assets/fonts/roboto-black-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack_italic';
+    src: url('./assets/fonts/roboto-blackitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-blackitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('./assets/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotobold_italic';
+    src: url('./assets/fonts/roboto-bolditalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoitalic';
+    src: url('./assets/fonts/roboto-italic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('./assets/fonts/roboto-light-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight_italic';
+    src: url('./assets/fonts/roboto-lightitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('./assets/fonts/roboto-medium-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium_italic';
+    src: url('./assets/fonts/roboto-mediumitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('./assets/fonts/roboto-thin-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin_italic';
+    src: url('./assets/fonts/roboto-thinitalic-webfont.woff2') format('woff2'),
+         url('./assets/fonts/roboto-thinitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+ion-content{
+    --background:var(--bg-gray);
+}
+
+
+
+.btn{
+    font-size: 1rem;
+    --border-radius: 15px;
+    border-radius: 20px;
+    padding: 10px 25px;
+    font-family: "poppinsregular";
+}
+
+.btn-dark{
+    --background: var(--button-dark-bg);
+    background: var(--button-dark-bg);
+    color: var(--white-color);
+}
+
+
+ion-toolbar{
+    --background: var(--theme-color);
+}
+
+ion-toolbar.search_bar{
+    /*position: absolute;
+    bottom: -44px;*/
+    align-items: center;
+    --background:var(--white-color);
+
+    ion-searchbar{
+        padding: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+        --background: var(--theme-color);
+        text-align: left;
+        color:var(--white-color);
+        font-family: 'poppinsregular';
+        --border-radius: 20px;
+
+        ion-icon{
+            color:var(--white-color);
+        }
+    }
+}
+.searchbar-search-icon.sc-ion-searchbar-ios,
+.searchbar-search-icon.sc-ion-searchbar-md{
+    color:var(--white-color);
+}
+ion-toolbar{
+    color: var(--white-color) !important;
+    text-align: center;
+
+    ion-title{
+        font-family: 'poppinsmedium';
+        line-height: 44px;
+    }    
+
+    ion-button{
+        --padding-start: 0;
+        --padding-end: 0;
+        ion-icon{
+            font-size: var(--font-size-18);
+        }
+    }
+    ion-icon{
+        font-size: var(--font-size-18);
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    ion-buttons{
+        ion-button{
+            --padding-start:4px !important;
+            --padding-end:4px !important;
+            --color: var(--white-color) !important;
+
+            ion-icon{
+                font-size: var(--font-size-18);
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.filter-container{
+    ion-toolbar{
+        --min-height: auto;
+        --padding-start: 0;
+        --padding-bottom: 0;
+        --padding-top: 0;
+        --padding-end: 0;
+
+        ion-text{
+            color: var( --button-dark-bg);
+            vertical-align: middle;
+            font-family: 'poppinsmedium';
+            text-transform: uppercase;
+            font-size: var(--font-size-12);            
+
+            ion-icon{
+                vertical-align: bottom;
+                font-size: var(--font-size-14);
+                color: var(--theme-black);
+            }
+        }
+        ion-grid{
+            background: var(--white-color);
+            text-align: center;
+        }
+    }
+}
+
+ion-menu-button{
+    color: var(--white-color) !important;
+}
+
+ion-menu.my-custom-menu{
+    ion-header{
+        ion-toolbar{
+            --ion-color-base: var(--theme-color) !important;
+            text-align: left;
+        }
+    }
+}
+
+.product_tile_showcase{
+    ion-label{
+        position: absolute;
+        z-index: 10;
+        bottom: 18px;        
+        margin: var(--margin-all-none);
+    }
+
+    ion-item:nth-child(odd) {
+        ion-label{
+            left: 15px;
+            right:auto;
+        }
+    }
+
+    ion-item:nth-child(even) {
+        ion-label{
+            right: 15px;
+            left: auto;
+        }
+    }
+    
+}
+
+.divider{
+
+}
+.divider-left-right{
+    
+}
+
+.product_summery{
+    ion-item{
+
+        ion-label{
+            
+        }
+    }
+}

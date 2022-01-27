@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="/category"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>Women Shoes</ion-title>
+ 
+    <ion-buttons slot="primary">
+      <ion-button class="ion-activatable ripple-parent" (click)="toggleSearchbar()">
+        <ion-icon name="search-outline" *ngIf="!showSearchbar"></ion-icon>
+        <ion-icon name="close-outline" *ngIf="showSearchbar"></ion-icon>
+        <ion-ripple-effect></ion-ripple-effect>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar *ngIf="showSearchbar" class="search_bar">
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-header class="filter-container">
+  <ion-toolbar>
+    <ion-grid class="filter_row">
+      <ion-row>
+        <ion-col size="4">
+          <ion-text>
+            <ion-icon name="swap-vertical-outline"></ion-icon> Sort By
+          </ion-text>
+        </ion-col>
+        <ion-col size="4" class="divider divider-left-right" padding-all-none >
+          <ion-text>
+            <ion-icon name="options-outline"></ion-icon> Refine
+          </ion-text> 
+        </ion-col>
+        <ion-col size="4">
+            <ion-text ng-init="Enable = true" (click)="Enable = !Enable" [ngClass]="Enable ? 'danger' : ' '">
+                <ion-icon [name]="Enable ? 'grid-outline' : 'list-outline'"></ion-icon> 
+                {{Enable ? 'Grid' : 'List'}}
+            </ion-text>  
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row class=""  [ngClass]="Enable ? 'list-container' : 'grid-container'" >
+<!--*ngIf="!Enable"-->
+      <ion-col [size]="Enable ? '12' : '6'" *ngFor="let item of productSummeyData" id="{{item.name}}" routerLink="/product-detail">
+        <ion-card class="ion-activatable ripple-parent">
+          <ion-icon name="heart-outline" *ngIf="item.wishlist == 1" class="wishlist_icon"></ion-icon>
+            <img src="{{item.img}}" class="product_img"/>
+          <ion-card-header>
+            <ion-card-title>{{item.name}}</ion-card-title>
+            <ion-card-subtitle>{{item.discription}}</ion-card-subtitle>           
+            
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item lines="none">
+              <ion-label class="ion-text-wrap size_container">
+                <ion-text>Size: 
+                  <ion-badge>S</ion-badge>
+                  <ion-badge>M</ion-badge>
+                  <ion-badge>L</ion-badge>
+                  <ion-badge>XL</ion-badge>
+                </ion-text>
+              </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+              <ion-label class="ion-text-wrap main_price">
+                <ion-text>{{item.current_price}}</ion-text>
+              </ion-label>
+              <ion-label class="ion-text-wrap old_price">
+                <ion-text>{{item.old_price}}</ion-text>
+              </ion-label>
+              <ion-label class="ion-text-wrap discount_price">
+                <ion-badge>{{item.discount}}</ion-badge>
+              </ion-label>
+            </ion-item>
+          </ion-card-content>
+            <ion-ripple-effect></ion-ripple-effect>
+
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+
+   </ion-grid>
+
+</ion-content>

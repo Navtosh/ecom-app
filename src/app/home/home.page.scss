@@ -1,0 +1,17 @@
+ion-grid{
+    padding: var(--padding-all-none);
+    ion-col{
+        padding: var(--padding-all-none);
+        ion-list{
+            padding: var(--padding-all-none);
+            ion-item{
+                --padding-start: 0;
+                --padding-end: 0;
+                padding: var(--padding-all-none);
+                margin: var(--margin-all-none);;
+                --inner-padding-end: 0;
+                --inner-padding-start: 0;
+            }
+        }
+    }
+}
